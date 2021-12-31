@@ -1,11 +1,10 @@
 # CryptoCards
-<img src="/images/ccgameplay1.jpg" width="200" alt="Crypto Cards Game Screen">
+<img src="/images/crypto-cards.gif" width="200" alt="Crypto Cards Game Screen">
 
-Improve your memory by playing this crypto-themed game!
-[Crypto Cards](https://jwhudnall.github.io/CryptoCards)
+Improve your memory by playing this crypto-themed game!<br>
+Link to the game: [Crypto Cards](https://jwhudnall.github.io/CryptoCards)
 
 ## How to Play
-The goal is to match card pairs
 1. Press the "Play Button"
 2. Click squares to reveal the underlying NFT or meme. 
 3. Click again to see if you found a match.

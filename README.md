@@ -1,4 +1,6 @@
 # CryptoCards
+<!-- ![Crypto Cards Game Screen](/images/ccgameplay1.jpg) -->
+<img src="/images/ccgameplay1.jpg" width=200px alt="Crypto Cards Game Screen">
 Improve your memory by playing this crypto-themed game!
 [Crypto Cards](https://jwhudnall.github.io/CryptoCards)
 
@@ -10,4 +12,5 @@ The goal is to match card pairs
 
 ## Rules
 1. Points accrue for each card flipped.
-2. Have fun!
+2. Your best score is saved locally via localStorage.
+3. Have fun and see if you can beat your best score!

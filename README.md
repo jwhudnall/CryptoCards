@@ -1,6 +1,6 @@
 # CryptoCards
-<!-- ![Crypto Cards Game Screen](/images/ccgameplay1.jpg) -->
-<img src="/images/ccgameplay1.jpg" width=200px alt="Crypto Cards Game Screen">
+<img src="/images/ccgameplay1.jpg" width="200" alt="Crypto Cards Game Screen">
+
 Improve your memory by playing this crypto-themed game!
 [Crypto Cards](https://jwhudnall.github.io/CryptoCards)
 

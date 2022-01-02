@@ -9,6 +9,12 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
 p {
   display: block;
   text-align: center;

@@ -1,7 +1,7 @@
 /*
 Notes/Observations:
   - Current codebase will not work if card divs have more than 1 class. Could refactor to include cards in HTML natively, vs. dynamically using JS.
-  - Should refactor to size cards according to screensize
+  - Should refactor to incorporate a smooth card flip.
 */
 
 const gameContainer = document.getElementById("game");
@@ -91,7 +91,7 @@ function gameOver() {
   window.scrollTo(0,document.body.scrollHeight); // Scroll to bottom
 
   playAgainBtn.addEventListener('click', function () {
-    resetGame(playAgainBtn);
+    playGame(playAgainBtn);
     scrollToTop();
   })
 }
@@ -119,7 +119,7 @@ function displayHighScoreBanner(){
   document.body.append(banner);
 }
 
-function resetGame(btn) {
+function playGame(btn) {
   const banner = document.querySelector('.high-score-banner');
   gameContainer.innerHTML = '';
   shuffledCards = shuffle(cardNames);
@@ -180,6 +180,7 @@ function displayHomeScreen() {
     startSection.style.display = "none";
     gameContainer.removeAttribute('style');
     scoreboard.removeAttribute('style');
+    document.querySelector('h2').remove();
   })
 }
 

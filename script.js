@@ -41,8 +41,23 @@ function shuffle(array) {
   return array;
 }
 
+// function createCards(arr) {
+//   for (let card of arr) {
+//     const newDiv = document.createElement("div");
+//     newDiv.classList.add(card);
+//     newDiv.setAttribute("data-clicked", false);
+//     newDiv.addEventListener("click", handleCardClick);
+//     gameContainer.append(newDiv);
+//   }
+// }
+// TODO: Modify so each card contains: scene => card => 2 face Divs
 function createCards(arr) {
   for (let card of arr) {
+    // Create a div, with class scene
+    // create a div, with class card
+    // create TWO divs:
+      // 1 with classes: card_face card_face-front
+      // 2 with classes: card_face card_face-back
     const newDiv = document.createElement("div");
     newDiv.classList.add(card);
     newDiv.setAttribute("data-clicked", false);

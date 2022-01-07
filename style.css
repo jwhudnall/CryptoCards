@@ -74,16 +74,48 @@ p:nth-of-type(1) {
   min-width: 500px
 }
 
-#game div {
-  border: 5px solid #2395eb;
-  border-style: dash doubled;
+/* 3D Animation - https://3dtransforms.desandro.com/card-flip */
+
+.scene {
+  /* border: 1px solid #2395eb; */
   height: 130px;
   margin: 10px;
   width: 130px;
+  /* background-size: cover;
+  background-position: center; */
+  perspective: 600px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
+  background: none;
+}
+
+.card__face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.card__face-front {
+  background-image: url("images/card-back.jpeg");
+  background-size: cover;
+  background-position: center;
+  /* background: red; */
+  /* border: 20px solid red; */
+}
+
+.card__face-back {
+  transform: rotateY( 180deg );
   background-size: cover;
   background-position: center;
 }
 
-#game div:hover {
-  transform: scale(1.05);
+.card.is-flipped {
+  transform: rotateY(180deg);
 }

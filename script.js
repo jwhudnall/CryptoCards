@@ -60,11 +60,11 @@ function createCards(arr) {
     const cardObj = document.createElement('div');
     cardObj.classList.add('card');
     // create TWO divs:
-      // 1 with classes: card_face card_face-front
+    // 1 with classes: card_face card_face-front
     const cardFront = document.createElement('div');
     cardFront.classList.add('card__face', 'card__face-front', card);
     cardFront.setAttribute("data-clicked", false);
-      // 2 with classes: card_face card_face-back
+    // 2 with classes: card_face card_face-back
     const cardBack = document.createElement('div');
     cardBack.classList.add('card__face', 'card__face-back');
     cardBack.style.backgroundImage = `url(${images[card]})`;
@@ -80,12 +80,9 @@ function createCards(arr) {
 
 function handleCardClick(event) {
   let cardClass = event.target.className.split(' ')[2]; // third class
-  console.log(`Card class: ${cardClass}`);
   let hasBeenClicked = event.target.dataset.clicked;
-  console.log(cardClass, hasBeenClicked);
 
   if (hasBeenClicked === "false" && userCanClick) {
-    console.log('inside HASBEENCLICKED')
     updateScore();
     flipCard(event, cardClass);
     checkBoard(event, cardClass);
@@ -100,22 +97,9 @@ function updateScore() {
 
 function checkGameStatus() {
   const cardFronts = Array.from(document.querySelectorAll('.card__face-front'));
-  const allClicked = cardFronts.every(el => el.dataset.clicked === "true");
-  if (allClicked) {
+  if (cardFronts.every(el => el.dataset.clicked === "true")) {
     gameOver();
   }
-
-  // let cards = gameContainer.children;
-  // let lengthOfDeck = cards.length;
-  // let clickedCardCount = 0;
-  // for (card of cards) {
-  //   if (card.dataset.clicked === "true") {
-  //     clickedCardCount++;
-  //   }
-  // }
-  // if (clickedCardCount === lengthOfDeck) {
-  //   gameOver();
-  // }
 }
 
 function gameOver() {
@@ -124,7 +108,7 @@ function gameOver() {
   playAgainBtn.textContent = 'Play Again?';
   playAgainBtn.classList.add('btn');
   document.body.append(playAgainBtn);
-  window.scrollTo(0,document.body.scrollHeight); // Scroll to bottom
+  window.scrollTo(0, document.body.scrollHeight); // Scroll to bottom
 
   playAgainBtn.addEventListener('click', function () {
     playGame(playAgainBtn);
@@ -148,7 +132,7 @@ function updateLocalStorage() {
   }
 }
 
-function displayHighScoreBanner(){
+function displayHighScoreBanner() {
   const banner = document.createElement('span');
   banner.classList.add('high-score-banner');
   banner.textContent = 'New High Score!';
@@ -169,8 +153,6 @@ function playGame(btn) {
 }
 
 function flipCard(event, cardClass) {
-  console.dir(event.target.parentNode);
-  // event.target.style.backgroundImage = `url(${images[cardClass]})`
   event.target.dataset.clicked = true;
   event.target.parentNode.classList.add('is-flipped');
 }
@@ -192,10 +174,8 @@ function resetFlippedCards(event, cardClass) {
   setTimeout(function () {
     const cardsOfNextType = document.getElementsByClassName(nextCardClass);
     event.target.dataset.clicked = false;
-    // event.target.style.backgroundImage = "";
     event.target.parentNode.classList.remove('is-flipped');
     for (let card of cardsOfNextType) {
-      console.log(card);
       card.parentNode.classList.remove('is-flipped');
       card.dataset.clicked = false;
     }

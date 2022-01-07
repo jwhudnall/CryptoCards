@@ -53,15 +53,14 @@ p:nth-of-type(1) {
   background: #1990ea;
   border: none;
   border-radius: 10em;
-  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 40%);
   color: #fff;
   cursor: pointer;
   display: block;
   font-family: 'Press Start 2P', cursive;
-  font-size: 2em;
-  font-weight: bold;
+  font-size: 1em;
   margin: 1em auto;
-  padding: 0.5em 1em;
+  padding: 1em 1em;
 }
 
 /* Main Game Screen */
@@ -70,19 +69,16 @@ p:nth-of-type(1) {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 800px;
   min-width: 500px
 }
 
 /* 3D Animation - https://3dtransforms.desandro.com/card-flip */
 
 .scene {
-  /* border: 1px solid #2395eb; */
   height: 130px;
   margin: 10px;
   width: 130px;
-  /* background-size: cover;
-  background-position: center; */
   perspective: 600px;
 }
 
@@ -103,11 +99,10 @@ p:nth-of-type(1) {
 }
 
 .card__face-front {
-  background-image: url("images/card-back.jpeg");
+  background-image: url("images/blue-btc-logo.png");
   background-size: cover;
   background-position: center;
-  /* background: red; */
-  /* border: 20px solid red; */
+  border: 1px solid #5894CD;
 }
 
 .card__face-back {

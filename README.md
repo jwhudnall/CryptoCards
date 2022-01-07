@@ -6,8 +6,8 @@ Link to the game: [Crypto Cards](https://jwhudnall.github.io/CryptoCards)
 
 ## How to Play
 1. Press the "Play Button"
-2. Click squares to reveal the underlying NFT or meme. 
-3. Click again to see if you found a match.
+2. Click cards to reveal their face. 
+3. Click another to see if you found a match.
 
 ## Rules
 1. Points accrue for each card flipped.

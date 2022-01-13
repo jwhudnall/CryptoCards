@@ -1,7 +1,7 @@
-# CryptoCards
-<img src="/images/crypto-cards.gif" width="200" alt="Crypto Cards Game Screen">
+# Crypto Cards
+<img src="/images/crypto-cards-gameplay.gif" width="200" alt="Crypto Cards Game Screen">
 
-Improve your memory by playing this crypto-themed game!<br>
+Improve your memory by playing this crypto-themed card game!<br>
 Link to the game: [Crypto Cards](https://jwhudnall.github.io/CryptoCards)
 
 ## How to Play
